@@ -3,7 +3,7 @@ const API_KEY = "3b5b2c5a5d90ef09d98c467547d79f52";
 const weather = document.querySelector(".js-weather");
 
 function getWeather(lat, lon){
-  const url = `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&APPID=${API_KEY}&units=metric`;
+  const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&APPID=${API_KEY}&units=metric`;
 
   fetch(url)
   .then(res => res.json())
