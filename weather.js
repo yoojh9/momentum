@@ -18,7 +18,7 @@ function paintWeather(data){
   const span = document.createElement("span")
   const img = document.createElement("img");
 
-  img.src = `http://openweathermap.org/img/w/${icon}.png`;
+  img.src = `https://openweathermap.org/img/w/${icon}.png`;
   img.width = 20;
 
   span.innerText = `${temp}˚C @ ${place}`;
