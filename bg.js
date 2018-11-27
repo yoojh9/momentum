@@ -22,6 +22,7 @@ function getRandom(){
 function init(){
   const randomNumber = getRandom();
   paintImage(randomNumber);
+  setInterval(paintImage(randomNumber), 1000*60*5);
 }
 
 init();
